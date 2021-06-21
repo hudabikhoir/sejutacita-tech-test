@@ -1,0 +1,1261 @@
+{
+	"info": {
+		"_postman_id": "bad4adea-65d2-4826-b0d3-97a17b8f8f21",
+		"name": "sejutacita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "nurhuda",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nurhuda@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "hudahuda",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/auth/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "nurhuda",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "nurhuda@mail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "hudahuda",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/auth/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"36-gVVocgocGPyLSqjnjGzOzbLxepM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:27:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"00\",\n    \"message\": \"success\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "failed response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "nurhuda",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "nurhuda@mail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "hudahuda",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/auth/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-sCqzF2Op3ZK093QBD5lKGAuY7eg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:38:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"500\",\n    \"message\": \"Something looks wrong.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "nurhuda@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "hudahuda",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/auth/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "nurhuda@mail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "hudahuda",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/auth/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "413"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19d-42EInJe4zmTbyBu6vm5hMvpgB0U\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:39:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"00\",\n    \"message\": \"success\",\n    \"data\": {\n        \"user\": {\n            \"_id\": \"60ce1ae916c3b987d9140b12\",\n            \"name\": \"nurhuda\",\n            \"email\": \"nurhuda@mail.com\",\n            \"role_id\": 2,\n            \"password\": \"$2b$10$NQLEs3rh1.q0VP.jedE5vuhFiGllgeXQvHi/UOHz9i7rQcl3kxPbm\",\n            \"__v\": 0\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwY2UxYWU5MTZjM2I5ODdkOTE0MGIxMiIsImlhdCI6MTYyNDEyMDc0NiwiZXhwIjoxNjI0MTI0MzQ2fQ.pwFs07m_lMWNG9CCS48YCVZqdNCsEsz60nz_r9l2Y88\"\n    }\n}"
+						},
+						{
+							"name": "failed response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "nurhuda@mail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "hudahuda1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/auth/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5d-9HFG3DflgehQRbiiduE65Yahh2c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:40:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"99\",\n    \"message\": \"Invalid email or password. Please check again!\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get all users",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwY2MzNTZiMGRlZTVmNmM3NTc1YzJjOCIsImlhdCI6MTYyNDExODgyNiwiZXhwIjoxNjI0MTIyNDI2fQ.zSh75VNesOnYxrxMOBw5pyy4uAWm9XIF8h6dmgv2euw",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "243"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f3-APrEY3faX3sZvcuclVe+QwJ5J/4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:48:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"00\",\n    \"message\": \"success\",\n    \"data\": {\n        \"users\": [\n            {\n                \"id\": \"60cc356b0dee5f6c7575c2c8\",\n                \"name\": \"huda bikhoir\",\n                \"email\": \"huda@mail.com\",\n                \"role_id\": 1\n            },\n            {\n                \"id\": \"60ce1ae916c3b987d9140b12\",\n                \"name\": \"nurhuda\",\n                \"email\": \"nurhuda@mail.com\",\n                \"role_id\": 2\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "invalid token response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwY2MzNTZiMGRlZTVmNmM3NTc1YzJjOCIsImlhdCI6MTYyNDExODgyNiwiZXhwIjoxNjI0MTIyNDI2fQ.zSh75VNesOnYxrxMOBw5pyy4uAWm9XIF8h6dmgv2euw",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-0suoOucLEGugs1qWmUAe63ZJ2is\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:52:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"99\",\n    \"message\": \"jwt must be provided\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "add new user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "mukhlisin alahudin",
+									"type": "text"
+								},
+								{
+									"key": "role_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mukhlis@mail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "mukhlisin alahudin",
+											"type": "text"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "admin123",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "mukhlis@mail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "70"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"46-gEvtd34BrgHVTkbMX0CSqnVJwoI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:54:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"00\",\n    \"message\": \"User added successfully\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "failed response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "mukhlisin alahudin",
+											"type": "text"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "admin123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-sCqzF2Op3ZK093QBD5lKGAuY7eg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:53:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"500\",\n    \"message\": \"Something looks wrong.\"\n}"
+						},
+						{
+							"name": "invalid token response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "mukhlisin alahudin",
+											"type": "text"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "admin123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-0suoOucLEGugs1qWmUAe63ZJ2is\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:51:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"99\",\n    \"message\": \"jwt must be provided\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "update users",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "role_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "mukhlis baru",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/users/60ce214ec76d3d891250ad43",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"60ce214ec76d3d891250ad43"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "mukhlis baru",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/users/60ce214ec76d3d891250ad43",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"60ce214ec76d3d891250ad43"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"48-iIva6PyK809XbVhTIxvxr2d5qTQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:57:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"00\",\n    \"message\": \"user updated successfully\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "failed response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "mukhlis baru",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/users/60ce214ec76d3d891250ad43d",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"60ce214ec76d3d891250ad43d"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-sCqzF2Op3ZK093QBD5lKGAuY7eg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:57:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"500\",\n    \"message\": \"Something looks wrong.\"\n}"
+						},
+						{
+							"name": "invalid token response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "{{token}}",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "mukhlis baru",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/users/60ce214ec76d3d891250ad43d",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"60ce214ec76d3d891250ad43d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-0suoOucLEGugs1qWmUAe63ZJ2is\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:58:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"99\",\n    \"message\": \"jwt must be provided\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "delete user by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "127.0.0.1:3000/users/60ce214ec76d3d891250ad43",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"60ce214ec76d3d891250ad43"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "127.0.0.1:3000/users/60ce214ec76d3d891250ad43",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"60ce214ec76d3d891250ad43"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"48-HUl0nrljR98uYrGjnNFsHNlkhuA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 17:01:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"00\",\n    \"message\": \"user deleted successfully\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "user_id not found response",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "127.0.0.1:3000/users/60ce214ec76d3d891250ad43d",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"60ce214ec76d3d891250ad43d"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-sCqzF2Op3ZK093QBD5lKGAuY7eg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 17:00:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"500\",\n    \"message\": \"Something looks wrong.\"\n}"
+						},
+						{
+							"name": "invalid token response",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:3000/users/60ce214ec76d3d891250ad43",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"60ce214ec76d3d891250ad43"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-0suoOucLEGugs1qWmUAe63ZJ2is\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jun 2021 16:59:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"99\",\n    \"message\": \"jwt must be provided\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
