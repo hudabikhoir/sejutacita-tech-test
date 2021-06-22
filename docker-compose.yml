@@ -1,0 +1,22 @@
+version: "3.3"
+services:
+  app:
+    container_name: sejuta-cita
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    links:
+      - mongo
+  mongo:
+    container_name: mongodbs
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./db/:/data/db
+networks:
+  sejutacita-network:
+    external: true
