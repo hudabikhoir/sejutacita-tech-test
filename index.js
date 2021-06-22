@@ -3,6 +3,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('./config/database');
 const users = require('./routes/users');
+const profile = require('./routes/profile');
 const auth = require('./routes/auth');
 var jwt = require('jsonwebtoken');
 const app = express();
@@ -33,6 +34,8 @@ app.use('/auth', auth);
 
 // private route
 app.use('/users', validateUser, users);
+
+app.use('/me', validateUser, profile);
 
 function validateUser(req, res, next) {
     jwt.verify(req.headers['x-access-token'], req.app.get('secretKey'), function (err, decoded) {

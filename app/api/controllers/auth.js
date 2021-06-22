@@ -50,4 +50,15 @@ module.exports = {
             }
         });
     },
+    me: function (req, res, next) {
+        userModel.findOne({
+            email: req.body.email
+        }, function (err, userInfo) {
+            res.json({
+                response_code: "00",
+                message: "success",
+                data: userInfo
+            });
+        });
+    },
 }
